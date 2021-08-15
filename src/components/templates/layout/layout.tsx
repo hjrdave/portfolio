@@ -5,16 +5,19 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react";
+import React from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useStaticQuery, graphql } from "gatsby";
-import Header from "./organisms/header";
-import Footer from './organisms/footer';
-import "./layout.css"
+import Header from "../../organisms/header";
+import Footer from '../../organisms/footer';
+import '../../../styles/styles.global.scss';
 
-const Layout = ({ children }: any) => {
+interface Props {
+  children: JSX.Element | JSX.Element[];
+}
+export default function Layout({ children }: Props) {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -27,7 +30,7 @@ const Layout = ({ children }: any) => {
 
   return (
     <>
-      <Container fluid>
+      <Container fluid className='p-0'>
         <Header />
         <Row>
           <Col>
@@ -39,6 +42,3 @@ const Layout = ({ children }: any) => {
     </>
   )
 }
-
-
-export default Layout

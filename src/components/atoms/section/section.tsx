@@ -1,12 +1,15 @@
 import React from 'react';
 import { compContainer } from './section.module.scss';
 
-export default function Section() {
+interface Props {
+    children?: JSX.Element | JSX.Element;
+}
+export default function Section({ children }: Props) {
 
     return (
         <>
             <div className={compContainer}>
-                <p>This is a section</p>
+                {children}
             </div>
         </>
     )

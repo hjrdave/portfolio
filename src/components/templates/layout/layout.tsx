@@ -7,8 +7,7 @@
 
 import React from "react";
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Bubbles from '../../atoms/bubbles';
 import { useStaticQuery, graphql } from "gatsby";
 import Header from "../../organisms/header";
 import Footer from '../../organisms/footer';
@@ -31,12 +30,9 @@ export default function Layout({ children }: Props) {
   return (
     <>
       <Container fluid className='p-0'>
+        <Bubbles />
         <Header />
-        <Row>
-          <Col>
-            {children}
-          </Col>
-        </Row>
+        {children}
         <Footer />
       </Container>
     </>

@@ -1,4 +1,8 @@
+@use '../../../styles/variables.scss' as *;
 .compContainer{
-    height: 200px;
-    border: 1px solid red;
+    height: 100vh;
+}
+
+.downArrow{
+    font-size: $font-size-base + 3.2rem;
 }

@@ -1,14 +1,14 @@
 import React from 'react';
-import Bubbles from '../../atoms/bubbles';
-import { compContainer } from './landingBanner.module.scss';
+import { compContainer, downArrow } from './landingBanner.module.scss';
 
 export default function LandingBanner() {
 
     return (
         <>
-            <div className={compContainer}>
-                <Bubbles />
-                <p>Landing Banner</p>
+            <div className={`${compContainer} d-flex`}>
+                <div className='align-self-end w-100'>
+                    <p className={`${downArrow} text-center`}><i className="fas fa-chevron-down"></i></p>
+                </div>
             </div>
         </>
     )

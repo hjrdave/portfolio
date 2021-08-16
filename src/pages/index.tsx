@@ -1,14 +1,20 @@
-import * as React from "react"
+import React from "react"
 import Seo from "../components/seo"
 import LandingBanner from '../components/organisms/landing-banner';
-import Section from '../components/atoms/section';
+import SkillSection from '../components/organisms/skill-section';
+import DevSection from "../components/organisms/dev-section";
+import UIDesignSection from "../components/organisms/ui-design-section";
+import DesignSection from "../components/organisms/design-section";
 
 export default function Page() {
   return (
     <>
       <Seo title="Home" />
       <LandingBanner />
-      <Section />
+      <SkillSection />
+      <DevSection />
+      <UIDesignSection />
+      <DesignSection />
     </>
   )
 }

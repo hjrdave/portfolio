@@ -1,0 +1,16 @@
+.skewedBorder{
+    position: relative;
+    height: 140px;
+}
+.skewLeft{
+    transform: skewY(3deg);
+}
+.skewRight{
+    transform: skewY(-3deg);
+}
+.dark{
+    background-color: #282B33;
+}
+.white{
+    background-color: #F2F3F3;
+}

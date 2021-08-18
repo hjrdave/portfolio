@@ -1,14 +1,16 @@
 import React from 'react';
-import { compContainer } from './section.module.scss';
+import { compContainer, dark } from './section.module.scss';
 
 interface Props {
     children?: JSX.Element | JSX.Element;
+    dark?: boolean;
+    className?: string;
 }
-export default function Section({ children }: Props) {
+export default function Section({ children, dark: darkBK, className }: Props) {
 
     return (
         <>
-            <div className={compContainer}>
+            <div className={`${compContainer} ${(darkBK) ? dark : ''} ${className}`}>
                 {children}
             </div>
         </>

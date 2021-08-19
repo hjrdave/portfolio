@@ -1,24 +1,26 @@
 import React from 'react';
-import Section from './../../atoms/section';
-import SkewedBorder from '../../atoms/skewed-border';
-import { compContainer } from './skillSection.module.scss';
+import SkewedSection from '../../molecules/skewed-section';
 
 export default function SkillSection() {
 
     return (
         <>
-            <div>
-                <SkewedBorder left dark style={{ marginTop: '100px' } as any} />
-                <div style={{ marginTop: '-100px' }}>
-                    <Section dark className={compContainer}>
-                        <p>This is the Skill Section</p>
-                    </Section>
-                </div>
-                <div style={{ marginTop: '-100px' }}>
-                    <SkewedBorder dark />
-                </div>
-
-            </div>
+            <SkewedSection left dark title={'My Skills'} className={'mt-4 pt-4'}>
+                <p className='text-white'>This is the Skill Section</p>
+                <p className='text-white'>This is the Skill Section</p>
+                <p className='text-white'>This is the Skill Section</p>
+                <p className='text-white'>This is the Skill Section</p>
+                <p className='text-white'>This is the Skill Section</p>
+                <p className='text-white'>This is the Skill Section</p>
+                <p className='text-white'>This is the Skill Section</p>
+                <p className='text-white'>This is the Skill Section</p>
+                <p className='text-white'>This is the Skill Section</p>
+                <p className='text-white'>This is the Skill Section</p>
+                <p className='text-white'>This is the Skill Section</p>
+                <p className='text-white'>This is the Skill Section</p>
+                <p className='text-white'>This is the Skill Section</p>
+                <p className='text-white'>This is the Skill Section</p>
+            </SkewedSection>
         </>
     )
 }

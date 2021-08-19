@@ -1,13 +1,26 @@
 import React from 'react';
-import Section from '../../atoms/section';
+import SkewedSection from '../../molecules/skewed-section';
 
 export default function DesignSection() {
 
     return (
         <>
-            <Section>
-                <p>This is the Design Section</p>
-            </Section>
+            <SkewedSection dark left title={'Design'}>
+                <p className='text-white'>This is the Design Section</p>
+                <p className='text-white'>This is the Design Section</p>
+                <p className='text-white'>This is the Design Section</p>
+                <p className='text-white'>This is the Design Section</p>
+                <p className='text-white'>This is the Design Section</p>
+                <p className='text-white'>This is the Design Section</p>
+                <p className='text-white'>This is the Design Section</p>
+                <p className='text-white'>This is the Design Section</p>
+                <p className='text-white'>This is the Design Section</p>
+                <p className='text-white'>This is the Design Section</p>
+                <p className='text-white'>This is the Design Section</p>
+                <p className='text-white'>This is the Design Section</p>
+                <p className='text-white'>This is the Design Section</p>
+                <p className='text-white'>This is the Design Section</p>
+            </SkewedSection>
         </>
     )
 }

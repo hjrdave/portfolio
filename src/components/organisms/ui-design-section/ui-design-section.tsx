@@ -1,13 +1,13 @@
 import React from 'react';
-import Section from '../../atoms/section';
+import SkewedSection from '../../molecules/skewed-section';
 
 export default function UIDesignSection() {
 
     return (
         <>
-            <Section>
-                <p>This is the UI Design Section</p>
-            </Section>
+            <SkewedSection>
+                <p className='text-white'>This is the Design Section</p>
+            </SkewedSection>
         </>
     )
 }

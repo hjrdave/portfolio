@@ -4,7 +4,7 @@ import { skewedBorder, skewLeft, skewRight, white, dark } from './skewedBorder.m
 interface Props {
     dark?: boolean;
     left?: boolean;
-    style?: React.StyleHTMLAttributes<any>;
+    style?: React.CSSProperties;
 }
 export default function SkewedBorder({ dark: darkBK, left, style }: Props) {
 

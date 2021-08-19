@@ -13,7 +13,7 @@ export default function Page() {
       <LandingBanner />
       <SkillSection />
       <DevSection />
-      <UIDesignSection />
+      {/* <UIDesignSection /> */}
       <DesignSection />
     </>
   )

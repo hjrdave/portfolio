@@ -1,15 +1,26 @@
 import React from 'react';
-import Section from '../../atoms/section';
-import SkewedBorder from '../../atoms/skewed-border';
+import SkewedSection from '../../molecules/skewed-section';
 
 export default function DevSection() {
 
     return (
         <>
-            {/* <SkewedBorder /> */}
-            <Section>
-                <p>This is the Dev Section</p>
-            </Section>
+            <SkewedSection title={'Development'}>
+                <p className='text-dark'>This is the Development Section</p>
+                <p className='text-dark'>This is the Development Section</p>
+                <p className='text-dark'>This is the Development Section</p>
+                <p className='text-dark'>This is the Development Section</p>
+                <p className='text-dark'>This is the Development Section</p>
+                <p className='text-dark'>This is the Development Section</p>
+                <p className='text-dark'>This is the Development Section</p>
+                <p className='text-dark'>This is the Development Section</p>
+                <p className='text-dark'>This is the Development Section</p>
+                <p className='text-dark'>This is the Development Section</p>
+                <p className='text-dark'>This is the Development Section</p>
+                <p className='text-dark'>This is the Development Section</p>
+                <p className='text-dark'>This is the Development Section</p>
+                <p className='text-dark'>This is the Development Section</p>
+            </SkewedSection>
         </>
     )
 }

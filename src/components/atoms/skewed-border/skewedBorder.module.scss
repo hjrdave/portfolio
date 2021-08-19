@@ -1,3 +1,5 @@
+@use '../../../styles/variables.scss' as *;
+
 .skewedBorder{
     position: relative;
     height: 140px;
@@ -9,7 +11,7 @@
     transform: skewY(-3deg);
 }
 .dark{
-    background-color: #282B33;
+    background-color: $primary;
 }
 .white{
     background-color: rgba(0,0,0,0);

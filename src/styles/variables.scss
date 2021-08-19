@@ -1,7 +1,18 @@
 /*
     Library Varibles
 */
-//Custom Theme Variables
+
+//Theme colors
+$primary:       #4A3C52;
+$primary-light: lighten($primary, 5%);
+$primary-dark:  darken($primary, 5%);
+$secondary:     #7C80A6;
+$grey:          #EDEEEE;
+$light:         lighten($grey, 10%);
+$light-2:       lighten($grey, 20%);
+$font-dark:     $primary;
+$font-light:    $font-dark;
+
 //Fonts and Text
 $font-weight-light:  200;
 $font-weight-bold:   500;
@@ -13,3 +24,9 @@ $h3-font-size:  $font-size-base * 1.70;
 $h4-font-size:  $font-size-base * 1.35;
 $h5-font-size:  $font-size-base * 1.25;
 $h6-font-size:  $font-size-base;
+
+$font: 'Space Mono', monospace;
+// $font-light: 'SpaceText-light', sans-serif;
+// $font-medium: 'SpaceText-medium', sans-serif;
+// $font-bold: 'SpaceText-bold', sans-serif;
+$font-family-base: $font;

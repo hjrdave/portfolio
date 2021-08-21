@@ -3,26 +3,31 @@ import { Bar } from 'react-chartjs-2';
 
 export default function BarChart() {
 
-    const DATA_COUNT = 7;
-    const NUMBER_CFG = { count: DATA_COUNT, min: -100, max: 100 };
-
-    //const labels = Utils.months({ count: 7 });
     const data = {
-        // labels: labels,
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [
             {
-                label: 'Dataset 1',
-                data: NUMBER_CFG,
-                borderColor: 'red',
-                backgroundColor: 'red',
+                //label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    '#4A3C52',
+                    '#4A3C52',
+                    '#4A3C52',
+                    '#4A3C52',
+                    '#4A3C52',
+                    '#4A3C52'
+                ],
+                borderColor: [
+                    '#57c09c',
+                    '#57c09c',
+                    '#57c09c',
+                    '#57c09c',
+                    '#57c09c',
+                    '#57c09c'
+                ],
+                borderWidth: 6,
             },
-            {
-                label: 'Dataset 2',
-                data: NUMBER_CFG,
-                borderColor: 'blue',
-                backgroundColor: 'blue',
-            }
-        ]
+        ],
     };
 
     const options = {
@@ -32,19 +37,32 @@ export default function BarChart() {
         elements: {
             bar: {
                 borderWidth: 2,
+            },
+        },
+        scales: {
+            x: {
+                grid: {
+                    display: false
+                }
+            },
+            y: {
+                grid: {
+                    display: false
+                },
             }
         },
         responsive: true,
         plugins: {
-            legend: {
-                position: 'right',
-            },
-            title: {
-                display: true,
-                text: 'Chart.js Horizontal Bar Chart'
-            }
-        }
-    }
+            // legend: {
+            //     position: 'right',
+            // },
+            // title: {
+            //     display: true,
+            //     text: 'Chart.js Horizontal Bar Chart',
+            // },
+        },
+    };
+
 
     return (
         <>

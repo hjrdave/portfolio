@@ -17,12 +17,12 @@ export default function SkewedSection({ children, left, dark, title, style, clas
 
     return (
         <>
-            <div style={style} className={className}>
+            <div style={style} className={`pt-5 pb-5 ${className} `}>
                 <SkewedBorder left={left} dark={dark} />
                 <Section dark={dark} className={compContainer} style={{ marginTop: '-100px', position: 'relative', zIndex: 1 }}>
                     <Row className={'d-flex justify-content-center'}>
                         <Col sm={'8'}>
-                            <h1 className={(dark) ? 'text-white' : 'text-dark'}>{title}</h1>
+                            <h1 className={`mb-5 ${(dark) ? 'text-white' : 'text-dark'}`}>{title}</h1>
                             {children}
                         </Col>
                     </Row>

@@ -10,7 +10,7 @@ export default function SkillSection() {
     return (
         <>
             <SkewedSection left dark title={'My Skills'} className={'mt-4 pt-4'}>
-                <Row>
+                <Row className={'pb-4'}>
                     <Col sm={'3'}>
                         <DonutChart label={'Skill 1'} />
                     </Col>
@@ -21,7 +21,7 @@ export default function SkillSection() {
                         <DonutChart label={'Skill 3'} />
                     </Col>
                 </Row>
-                <Row>
+                <Row className={'pb-5'}>
                     <Col>
                         <BarChart />
                     </Col>

@@ -33,7 +33,7 @@ export default function Layout({ children }: Props) {
         <Bubbles />
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </Container>
     </>
   )

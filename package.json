@@ -26,7 +26,9 @@
     "react-chartjs-2": "^3.0.4",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-spring": "^9.2.4",
     "react-tsparticles": "^1.33.3",
+    "react-typed": "^1.2.0",
     "sass": "^1.37.5"
   },
   "devDependencies": {

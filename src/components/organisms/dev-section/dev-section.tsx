@@ -22,9 +22,6 @@ export default function DevSection() {
                     <Col className={'p-0'}>
                         <img src={portTileTlsanders} width={'100%'} />
                     </Col>
-                    {/* <Col className={'p-0'}>
-                        <img src={eventTicket} width={'100%'} />
-                    </Col> */}
                 </Row>
                 <Row>
                     <Col className={'p-0'}>

@@ -1,0 +1,59 @@
+.container{
+    animation: moveLogo 4s ease;
+    transform: translateX(300px) translateY(0px);
+    transform-origin: center;
+    animation-fill-mode: forwards
+}
+.float{
+   animation: float 2s ease infinite;
+   animation-delay: 4s;
+   transform-origin: center bottom;
+  // border: 1px solid red;
+}
+$bubbleOrigin: 75% 60%;
+
+.bubble1{
+  animation: fadeBubble 2s ease infinite;
+  animation-fill-mode: forwards;
+  
+  opacity: 0;
+  //transition: opacity 3s;
+  transform-origin: $bubbleOrigin;
+}
+
+.bubble2{
+  animation: fadeBubble 4s ease infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0;
+ transform-origin: $bubbleOrigin;
+}
+
+.depth{
+  box-shadow:  5px 10px;
+}
+
+@keyframes moveLogo {
+  0%   {transform: translateX(-300px) scale(.60) rotateY(15deg); opacity: .5}
+  25%  {transform: translateY(300px) translateX(-100px) scale(.7)}
+  50%  {transform: translateY(0px) translateX(0px) scale(.8)}
+  75%  {transform: translateY(200px) translateX(200px) scale(.9)}
+  100% {transform: translateY(0px) translateX(300px) scale(1); opacity: 1}
+}
+
+@keyframes fadeBubble{
+  from {
+    opacity: 0;
+    transform: scale(0)
+  }
+  to {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+@keyframes float{
+  0% {transform: translateY(-5px) scale(1) rotateY(10deg)}
+  50% {transform: translateY(5px) scale(.95) rotateY(-10deg)}
+  100% {transform: translateY(-5px) scale(1) rotateY(10deg)}
+}

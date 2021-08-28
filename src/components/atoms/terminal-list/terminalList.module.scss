@@ -1,0 +1,10 @@
+@use '../../../styles/variables.scss' as *;
+
+.compContainer{
+    font-size: 1.2rem;
+}
+
+.active{
+    background-color: $primary;
+    color: white;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import SkewedSection from '../../molecules/skewed-section';
+import TerminalList from '../../atoms/terminal-list';
 import eventTicket from '../../../images/EventTicket.png';
 import generalBrochure from '../../../images/generalBrochure1.png';
 import infocards1 from '../../../images/infocards1.png';
@@ -15,6 +16,11 @@ export default function DevSection() {
         <>
             <SkewedSection title={'Development'}>
                 <Row>
+                    <Col>
+                        <TerminalList items={['TrebleGSM', 'TLSanders.com', 'Github']} />
+                    </Col>
+                </Row>
+                {/* <Row>
                     <Col className={'p-0'}>
                         <img src={trebleGSMTile} width={'100%'} />
 
@@ -30,10 +36,10 @@ export default function DevSection() {
                     <Col className={'p-0'}>
                         <img src={generalBrochure} width={'100%'} />
                     </Col>
-                    {/* <Col className={'p-0'}>
+                    <Col className={'p-0'}>
                         <img src={infocards1} width={'100%'} />
-                    </Col> */}
-                </Row>
+                    </Col>
+                </Row> */}
                 {/*  <Row>
                     <Col className={'p-0'}>
                         <img src={eventTicket} width={'100%'} />

@@ -25,6 +25,7 @@ export default function TerminalList({ items }: Props) {
     const [runProgram, setRunProgram] = React.useState(false);
     const [loadData, setLoadData] = React.useState(false);
     const [currentEvent, setCurrentEvent] = React.useState<React.KeyboardEvent>();
+    const [focused, setFocused] = React.useState(false);
 
     const itemCount = items.length;
 
@@ -40,6 +41,7 @@ export default function TerminalList({ items }: Props) {
         if (!startProgram) {
             if (e.key === 'Enter') {
                 setStartProgram(true);
+                setFocused(false)
                 setTimeout(() => setRunProgram(true), 4000);
             }
         }
@@ -83,8 +85,8 @@ export default function TerminalList({ items }: Props) {
 
     return (
         <>
-            <div ref={ref} className={`${compContainer}`} tabIndex={0} onKeyDown={(e) => onKeyDown(e)}>
-                <p>Press [Enter] to Start Program</p>
+            <div ref={ref} className={`${compContainer}`} tabIndex={0} onKeyDown={(e) => onKeyDown(e)} onFocus={() => setFocused(true)}>
+                <p>Press [Enter] to Start Program{(focused) ? <Typed loop strings={['']} typeSpeed={275} /> : null}</p>
                 {
                     (startProgram) ? <StartProgram /> : null
                 }

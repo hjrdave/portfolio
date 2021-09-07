@@ -31,7 +31,7 @@ export default function Layout({ children }: Props) {
     <>
       <Container fluid className='p-0'>
         <Bubbles />
-        <Header />
+        {/* <Header /> */}
         {children}
         <Footer />
       </Container>

@@ -18,7 +18,7 @@ export default function AnimatedBannerTitle() {
                 <h3>
                     {
                         (!hideTyped) ?
-                            <Typed strings={["I am Coder", "a Designer", "and a lover of fish....🐟"]} typeSpeed={60} backSpeed={80} loop /> : null
+                            <Typed strings={["I am Coder", "a Designer", "and a lover of coffee..☕"]} typeSpeed={60} backSpeed={80} loop /> : null
                     }
                 </h3>
             </div>

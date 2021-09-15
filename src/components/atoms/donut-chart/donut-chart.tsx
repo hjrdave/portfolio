@@ -29,7 +29,7 @@ export default function SkillChartDonut({ className, style, label }: Props) {
         <>
             <div className={className} style={style}>
                 <Doughnut data={data} />
-                <h5 className='text-white text-center mt-3'>{label}</h5>
+                <h5 className='text-center mt-3' style={{ color: '#57c09c' }}>{label}</h5>
             </div>
         </>
     )

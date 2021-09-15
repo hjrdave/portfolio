@@ -1,0 +1,36 @@
+
+
+$collapseBtnHeight: 33px;
+
+
+.animation{
+   transition: transform .3s, opacity .3s;
+}
+
+.modal{
+    opacity: 0;
+    transform: scale(.8);
+    opacity: 0;
+    
+}
+
+.open{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.backdrop{
+    transition: opacity .3s;
+}
+
+.close.show{
+    opacity: 0!important;
+}
+
+
+
+
+  
+
+
+

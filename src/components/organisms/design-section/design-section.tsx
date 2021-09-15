@@ -1,53 +1,55 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import SkewedSection from '../../molecules/skewed-section';
+import ImageBioPiece from '../../atoms/image-bio-piece';
 import eventTicket from '../../../images/EventTicket.png';
 import generalBrochure from '../../../images/generalBrochure1.png';
 import infocards1 from '../../../images/infocards1.png';
-import prymziabookcover from '../../../images/prymziabookcover.png';
-import { animatedThumbnail, thumbnail, thumbnailCentered } from './designSection.module.scss';
+import ModalBasic from '../../molecules/modal-basic';
+import { modalBody } from './designSection.module.scss';
 
 export default function DesignSection() {
 
-    const [popout, setpopout] = React.useState(false);
+    const [show, setShow] = React.useState(false);
+    const [modalUrl, setModalUrl] = React.useState('');
+    const [modalInfo, setModalInfo] = React.useState({ company: 'Loading...', type: 'Loading...' });
+    const onClick = (url: string, info: any) => {
+        setModalUrl(url);
+        setModalInfo(info);
+    }
 
     return (
         <>
+            <ModalBasic show={show} onHide={() => setShow(false)} className={modalBody}>
+                <ModalBasic.Body className={`${modalBody} p-0`} >
+                    <Col sm={12}>
+                        <img src={modalUrl} width={'100%'} />
+                    </Col>
+                    <Col sm={12} className={'p-4'}>
+                        <p>{modalInfo.company}</p>
+                        <p>{modalInfo.type}</p>
+                    </Col>
+                </ModalBasic.Body>
+            </ModalBasic>
             <SkewedSection dark left title={'Design'}>
                 <Row>
-                    <Col className={'p-0'}>
-                        <div className={`${animatedThumbnail} ${thumbnailCentered} p-2`}>
-                            <img src={infocards1} className={thumbnail} width={'100%'} style={{ animationDelay: '1.05s' }} />
-                        </div>
+                    <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
+                        <ImageBioPiece image={infocards1} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
                     </Col>
-                    <Col className={'p-0'}>
-                        <div className={`${animatedThumbnail} p-2`}>
-                            <img src={generalBrochure} className={thumbnail} width={'100%'} />
-                        </div>
+                    <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
+                        <ImageBioPiece image={generalBrochure} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
                     </Col>
-                </Row>
-                <Row>
-                    <Col className={'p-0'}>
-                        <div className={`${animatedThumbnail} p-2`}>
-                            <img src={eventTicket} width={'100%'} className={thumbnail} />
-                        </div>
+                    <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
+                        <ImageBioPiece image={eventTicket} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
                     </Col>
-                    <Col className={'p-0'}>
-                        <div className={`${animatedThumbnail} p-2`}>
-                            <img src={generalBrochure} width={'100%'} className={thumbnail} style={{ animationDelay: '1.3s' }} />
-                        </div>
+                    <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
+                        <ImageBioPiece image={generalBrochure} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
                     </Col>
-                </Row>
-                <Row className={'pb-5'}>
-                    <Col className={'p-0'}>
-                        <div className={`${animatedThumbnail} p-2`}>
-                            <img src={eventTicket} width={'100%'} className={thumbnail} style={{ animationDelay: '1.1s' }} />
-                        </div>
+                    <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
+                        <ImageBioPiece image={eventTicket} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
                     </Col>
-                    <Col className={'p-0'}>
-                        <div className={`${animatedThumbnail} p-2`}>
-                            <img src={infocards1} width={'100%'} className={thumbnail} style={{ animationDelay: '1.3s' }} />
-                        </div>
+                    <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
+                        <ImageBioPiece image={infocards1} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
                     </Col>
                 </Row>
             </SkewedSection>

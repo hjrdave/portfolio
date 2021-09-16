@@ -1,31 +1,29 @@
+import { withArtDirection } from 'gatsby-plugin-image';
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
 
-export default function BarChart() {
+interface Props {
+    bars: {
+        label: string,
+        level: number
+    }[];
+}
+export default function BarChart({ bars }: Props) {
+
+    const labels = bars.map((bar) => (bar.label));
+    const levels = bars.map((bars) => (bars.level));
+    const fill = bars.map(() => ('#4A3C52'));
+    const border = bars.map(() => ('#57c09c'));
 
     const data = {
-        labels: ['HTML/CSS', 'JavaScript', 'React', 'Typescript', 'Wordpress', 'Adobe Suite'],
+        labels: labels,
         datasets: [
             {
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
-                //color: '#000000',
-                backgroundColor: [
-                    '#4A3C52',
-                    '#4A3C52',
-                    '#4A3C52',
-                    '#4A3C52',
-                    '#4A3C52',
-                    '#4A3C52'
-                ],
-                borderColor: [
-                    '#57c09c',
-                    '#57c09c',
-                    '#57c09c',
-                    '#57c09c',
-                    '#57c09c',
-                    '#57c09c'
-                ],
+                label: false,
+                color: '#000000',
+                data: levels,
+                backgroundColor: fill,
+                borderColor: border,
                 borderWidth: 6,
             },
         ],
@@ -60,7 +58,11 @@ export default function BarChart() {
             }
         },
         responsive: true,
-        //scaleFontColor: '#000000'
+        plugins: {
+            legend: {
+                display: false
+            }
+        }
     };
 
 

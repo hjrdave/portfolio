@@ -5,13 +5,14 @@ interface Props {
     className?: string;
     style?: React.CSSProperties;
     label?: string;
+    level?: number;
 }
-export default function SkillChartDonut({ className, style, label }: Props) {
+export default function SkillChartDonut({ className, style, label, level }: Props) {
 
     const data = {
         datasets: [
             {
-                data: [5, 2],
+                data: [level, 10],
                 backgroundColor: [
                     '#57c09c',
                     '#4A3C52'

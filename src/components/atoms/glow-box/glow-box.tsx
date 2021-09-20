@@ -8,7 +8,7 @@ export default function GlowBox({ children }: Props) {
 
     return (
         <>
-            <div className={`${compContainer} p-4`}>
+            <div className={`${compContainer}`}>
                 {children}
             </div>
         </>

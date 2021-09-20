@@ -5,6 +5,9 @@ import ImageBioPiece from '../../atoms/image-bio-piece';
 import eventTicket from '../../../images/EventTicket.png';
 import generalBrochure from '../../../images/generalBrochure1.png';
 import infocards1 from '../../../images/infocards1.png';
+import bookCover from '../../../images/prymziabookcover.png';
+import rollupBanner from '../../../images/rollupbanner.png';
+import businessCard from '../../../images/somethingstitched.png';
 import ModalBasic from '../../molecules/modal-basic';
 import { modalBody } from './designSection.module.scss';
 
@@ -43,13 +46,13 @@ export default function DesignSection() {
                         <ImageBioPiece image={eventTicket} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
                     </Col>
                     <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
-                        <ImageBioPiece image={generalBrochure} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
+                        <ImageBioPiece image={bookCover} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
                     </Col>
                     <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
-                        <ImageBioPiece image={eventTicket} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
+                        <ImageBioPiece image={rollupBanner} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
                     </Col>
                     <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
-                        <ImageBioPiece image={infocards1} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
+                        <ImageBioPiece image={businessCard} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
                     </Col>
                 </Row>
             </SkewedSection>

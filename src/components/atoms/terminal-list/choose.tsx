@@ -13,14 +13,16 @@ export default function Choose({ items, activeOption, active }: Props) {
         <>
             {
                 <>
-                    <p> ~ Choose a project from the list: (use keyboard)</p>
+                    <p><code> ~ Choose a project from the list: (use keyboard)</code></p>
                     {
                         items.map((item, index) => (
                             <React.Fragment key={index}>
                                 <p>
-                                    <span className={`${(activeOption === index) ? active : ''} px-1`}>
-                                        {(activeOption === index) ? <>&gt;&gt;</> : '-'} {item.name}  {(activeOption === index) ? '[Enter]' : null}
-                                    </span>
+                                    <code>
+                                        <span className={`${(activeOption === index) ? active : ''} px-1`}>
+                                            {(activeOption === index) ? <>&gt;&gt;</> : '-'} {item.name}  {(activeOption === index) ? '[Enter]' : null}
+                                        </span>
+                                    </code>
                                 </p>
                             </React.Fragment>
                         ))

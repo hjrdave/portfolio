@@ -16,15 +16,15 @@ export default function DevSection() {
     const devList = [
         {
             name: 'TrebleGSM',
-            description: 'This is a hook based global state management system for React.js. It has a light footprint, is highly extendable, can be used in simple applications, in enterprise level applications, it is easily integrated into applications with other GSM solutions, and can be used to build widgets in standalone libraries.'
+            description: <>This is a hook based global state management system for React.js. It has a light footprint, is highly extendable, can be used in simple applications, in enterprise level applications, it is easily integrated into applications with other GSM solutions, and can be used to build widgets in standalone libraries. <a href={'https://treblegsm.org'} target={'_blank'}>Visit TrebleGSM.com</a>.</>
         },
         {
             name: 'TLSanders.com',
-            description: 'I’m a wife, a mother of boys, and I live in Centralia, Illinois. I’m an author and illustrator of children’s picture books and YA books. I love to write, illustrate, eat chocolate, and browse stores with office ...I’m a wife, a mother of boys, and I live in Centralia, Illinois. I’m an author and illustrator of children’s picture books and YA books. I love to write, illustrate, eat chocolate, and browse stores with office ...'
+            description: <>This is an Author website I created for Author and Illustrator TL Sanders. I used Wordpress and a custom theme to create this site. I also connected the site blog to social media and added an email form to help with creating an email marketing list. <a href='https://tlsanders.com' target={'_blank'}>Visit TLSanders.com</a>. </>
         },
         {
             name: 'Github',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget nulla eu libero bibendum bibendum. Aliquam eget enim sed felis lacinia pretium. Nam et metus sit amet felis tempus laoreet.'
+            description: <>You can see all of the projects I am working on <a href='https://github.com/hjrdave' target='_blank'>here</a>.</>
         }
     ]
 

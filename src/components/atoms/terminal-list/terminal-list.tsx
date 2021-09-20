@@ -1,6 +1,5 @@
 import React from 'react';
 import Typed from 'react-typed';
-//import useKeyPress from '../../../hooks/use-key-press';
 import Choose from './choose';
 import StartProgram from './start-program';
 import LoadingData from './loading-data';
@@ -11,7 +10,7 @@ import { compContainer, active } from './terminalList.module.scss';
 interface Props {
     items: {
         name: string,
-        description: string
+        description: string | JSX.Element
     }[];
 }
 export default function TerminalList({ items }: Props) {
@@ -20,7 +19,6 @@ export default function TerminalList({ items }: Props) {
     const ref = React.useRef(null);
     const [terminalHistory, setTerminalHistory] = React.useState<any[]>([]);
     const [activeOption, setActiveOption] = React.useState<number>(-1);
-    const [activeIndex, setActiveIndex] = React.useState(-1);
     const [startProgram, setStartProgram] = React.useState(false);
     const [runProgram, setRunProgram] = React.useState(false);
     const [loadData, setLoadData] = React.useState(false);
@@ -42,7 +40,7 @@ export default function TerminalList({ items }: Props) {
             if (e.key === 'Enter') {
                 setStartProgram(true);
                 setFocused(false)
-                setTimeout(() => setRunProgram(true), 4000);
+                setTimeout(() => setRunProgram(true), 3000);
             }
         }
         else if (runProgram) {
@@ -79,14 +77,14 @@ export default function TerminalList({ items }: Props) {
                 if (currentEvent) {
                     scrollToBottom(currentEvent);
                 }
-            }, 4000);
+            }, 3000);
         }
     }, [loadData]);
 
     return (
         <>
-            <div ref={ref} className={`${compContainer}`} tabIndex={0} onKeyDown={(e) => onKeyDown(e)} onFocus={() => setFocused(true)}>
-                <p>Press [Enter] to Start Program{(focused) ? <Typed loop strings={['']} typeSpeed={275} /> : null}</p>
+            <div ref={ref} className={`${compContainer} p-4`} tabIndex={0} onKeyDown={(e) => onKeyDown(e)} onFocus={() => setFocused(true)}>
+                <p><code>Press [Enter] to Start Program{(focused) ? <Typed loop strings={['']} typeSpeed={275} /> : null}</code></p>
                 {
                     (startProgram) ? <StartProgram /> : null
                 }
@@ -95,7 +93,7 @@ export default function TerminalList({ items }: Props) {
                         <React.Fragment key={index}>
                             {
                                 (type === 'loading') ?
-                                    <p>Loading Data......</p> :
+                                    <code className={"text-info"}>Loading Data......</code> :
                                     (type === 'list') ?
                                         <OptionList
                                             items={items}

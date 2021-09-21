@@ -5,8 +5,8 @@ interface Props {
     image: string;
     noAnimation?: boolean;
     noPadding?: boolean;
-    info: { company: string, type: string, [key: string]: any };
-    onClick?: (url: string, info: { company: string, type: string }) => void;
+    info: { [key: string]: any };
+    onClick?: (url: string, info: { [key: string]: any }) => void;
 }
 export default function ImageBioPiece({ image, noAnimation, noPadding, onClick, info }: Props) {
 

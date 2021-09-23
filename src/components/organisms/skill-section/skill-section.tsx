@@ -6,11 +6,14 @@ import BarChart from '../../atoms/bar-chart';
 import RetroScreen from '../../atoms/retro-screen';
 import SkewedSection from '../../molecules/skewed-section';
 
-export default function SkillSection() {
+interface Props {
+    compRef?: any;
+}
+export default function SkillSection({ compRef }: Props) {
 
     return (
         <>
-            <SkewedSection left dark title={'My Skills'} className={'mt-4 pt-4'}>
+            <SkewedSection compRef={compRef} left dark title={'My Skills'} className={'mt-4 pt-4'}>
                 <Row>
                     <Col>
                         <RetroScreen>

@@ -7,13 +7,15 @@ import { compContainer } from './skewedSection.module.scss';
 
 interface Props {
     children?: JSX.Element | JSX.Element[];
+    id?: string;
     left?: boolean;
     dark?: boolean;
     title?: string;
     style?: React.CSSProperties;
     className?: string;
+    compRef?: any;
 }
-export default function SkewedSection({ children, left, dark, title, style, className }: Props) {
+export default function SkewedSection({ children, left, dark, title, style, className, id, compRef }: Props) {
 
     return (
         <>
@@ -22,7 +24,7 @@ export default function SkewedSection({ children, left, dark, title, style, clas
                 <Section dark={dark} className={compContainer} style={{ marginTop: '-100px', position: 'relative', zIndex: 1 }}>
                     <Row className={'d-flex justify-content-center'}>
                         <Col sm={'8'}>
-                            <h1 className={`mb-5 ${(dark) ? 'text-white' : 'text-dark'}`}>{title}</h1>
+                            <h1 ref={compRef} className={`mb-5 ${(dark) ? 'text-white' : 'text-dark'}`}>{title}</h1>
                             {children}
                         </Col>
                     </Row>

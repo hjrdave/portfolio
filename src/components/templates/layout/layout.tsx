@@ -11,6 +11,8 @@ import Bubbles from '../../atoms/bubbles';
 import { useStaticQuery, graphql } from "gatsby";
 import Header from "../../organisms/header";
 import Footer from '../../organisms/footer';
+import LineNav from '../../molecules/line-nav';
+import { smoothScroll } from './layout.module.scss';
 import '../../../styles/styles.global.scss';
 
 interface Props {
@@ -27,11 +29,14 @@ export default function Layout({ children }: Props) {
     }
   `)
 
+
+
   return (
     <>
-      <Container fluid className='p-0'>
+      <Container fluid className={`p-0 ${smoothScroll}`}>
         <Bubbles />
         {/* <Header /> */}
+        {/* <LineNav navItems={['Skills', 'Development', 'Design']} /> */}
         {children}
         <Footer />
       </Container>

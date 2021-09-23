@@ -5,15 +5,24 @@
 
 .downArrow{
     font-size: $font-size-base + 3.2rem;
+    color: $primary;
+    animation: pulse infinite 1.75s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
 }
 
 .logo{
     height: 300px;
-    //margin-left: 300px;
 }
 
-
-
-.test{
-    opacity: .1;
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.25);
+    }
+    100%{
+        transform: scale(1);
+    }
 }

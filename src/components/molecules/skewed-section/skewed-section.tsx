@@ -19,18 +19,20 @@ export default function SkewedSection({ children, left, dark, title, style, clas
 
     return (
         <>
-            <div style={style} className={`pt-5 pb-5 ${className} `}>
+            <Col style={style} className={`pt-5 pb-5 ${className} `}>
                 <SkewedBorder left={left} dark={dark} />
                 <Section dark={dark} className={compContainer} style={{ marginTop: '-100px', position: 'relative', zIndex: 1 }}>
-                    <Row className={'d-flex justify-content-center'}>
-                        <Col sm={'8'}>
-                            <h1 ref={compRef} className={`mb-5 ${(dark) ? 'text-white' : 'text-dark'}`}>{title}</h1>
-                            {children}
-                        </Col>
-                    </Row>
+                    <Col sm={'12'}>
+                        <div className={'d-flex justify-content-center'}>
+                            <Col sm={'8'}>
+                                <h1 ref={compRef} className={`mb-5 ${(dark) ? 'text-white' : 'text-dark'}`}>{title}</h1>
+                                {children}
+                            </Col>
+                        </div>
+                    </Col>
                 </Section>
                 <SkewedBorder left={(left) ? false : true} dark={dark} style={{ marginTop: '-100px', zIndex: 0 }} />
-            </div>
+            </Col>
         </>
     )
 }

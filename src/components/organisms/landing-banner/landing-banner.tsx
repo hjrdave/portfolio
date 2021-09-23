@@ -27,7 +27,7 @@ export default function LandingBanner({ onArrowClick }: Props) {
                     </div>
                 </div>
                 <div className='align-self-end w-100'>
-                    <p className={`${downArrow} text-center`} ><i className="fas fa-chevron-down" onClick={onArrowClick}></i></p>
+                    <p className={`text-center`}><i className={`fas fa-chevron-down ${downArrow}`} onClick={onArrowClick}></i></p>
                 </div>
             </div>
         </>

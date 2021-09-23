@@ -16,7 +16,6 @@ export default function Page() {
       <LandingBanner onArrowClick={onClick} />
       <SkillSection compRef={skillRef} />
       <DevSection />
-      {/* <UIDesignSection /> */}
       <DesignSection />
     </>
   )

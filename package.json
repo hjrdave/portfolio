@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "My Portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "My portfolio website.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "David A. Sanders <dsanders@mediafish.io>",
   "dependencies": {
     "@types/react-scrollspy": "^3.3.4",
     "bootstrap": "^5.1.0",
@@ -58,9 +58,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/hjrdave/portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/hjrdave/portfolio/issues"
   }
 }

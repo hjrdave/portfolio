@@ -38,38 +38,6 @@ export default function DevSection() {
                         </GlowBox>
                     </Col>
                 </Row>
-                {/* <Row>
-                    <Col className={'p-0'}>
-                        <img src={trebleGSMTile} width={'100%'} />
-
-                    </Col>
-                    <Col className={'p-0'}>
-                        <img src={portTileTlsanders} width={'100%'} />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col className={'p-0'}>
-                        <img src={portTileGithub} width={'100%'} />
-                    </Col>
-                    <Col className={'p-0'}>
-                        <img src={generalBrochure} width={'100%'} />
-                    </Col>
-                    <Col className={'p-0'}>
-                        <img src={infocards1} width={'100%'} />
-                    </Col>
-                </Row> */}
-                {/*  <Row>
-                    <Col className={'p-0'}>
-                        <img src={eventTicket} width={'100%'} />
-                    </Col>
-                    <Col className={'p-0'}>
-                        <img src={infocards1} width={'100%'} />
-
-                    </Col>
-                    <Col className={'p-0'}>
-                        <img src={generalBrochure} width={'100%'} />
-                    </Col>
-                </Row> */}
             </SkewedSection>
         </>
     )

@@ -3,7 +3,7 @@
 .compContainer{
     font-size: 1.2rem;
     height: 550px;
-    overflow-x: scroll;
+    overflow-x: auto;
     &:focus{
         outline: none!important;
         outline-width: none!important;

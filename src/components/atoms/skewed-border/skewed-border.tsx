@@ -1,4 +1,5 @@
 import React from 'react';
+import Row from 'react-bootstrap/Row';
 import { skewedBorder, skewLeft, skewRight, white, dark } from './skewedBorder.module.scss';
 
 interface Props {
@@ -10,7 +11,9 @@ export default function SkewedBorder({ dark: darkBK, left, style }: Props) {
 
     return (
         <>
-            <div style={style} className={`${skewedBorder} ${(left) ? skewLeft : skewRight} ${(darkBK) ? dark : white}`}></div>
+            <Row>
+                <div style={style} className={`${skewedBorder} ${(left) ? skewLeft : skewRight} ${(darkBK) ? dark : white}`}></div>
+            </Row>
         </>
     )
 }

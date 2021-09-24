@@ -50,33 +50,12 @@ export default function DesignSection() {
                     {
                         data.map((piece) => (
                             <>
-                                <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
+                                <Col md={12} lg={6} xl={4} className={'p-0'} onClick={() => setShow(true)}>
                                     <ImageBioPiece image={piece.imageURL} info={piece} onClick={onClick} />
                                 </Col>
                             </>
                         ))
                     }
-                    {/* <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
-                        <ImageBioPiece image={infocards1} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
-                    </Col>
-                    <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
-                        <ImageBioPiece image={generalBrochure} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
-                    </Col>
-                    <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
-                        <ImageBioPiece image={eventTicket} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
-                    </Col>
-                    <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
-                        <ImageBioPiece image={bookCover} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
-                    </Col>
-                    <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
-                        <ImageBioPiece image={rollupBanner} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
-                    </Col>
-                    <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
-                        <ImageBioPiece image={businessCard} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
-                    </Col>
-                    <Col sm={4} className={'p-0'} onClick={() => setShow(true)}>
-                        <ImageBioPiece image={prymziaMap} info={{ company: 'foo', type: 'foo' }} onClick={onClick} />
-                    </Col> */}
                 </Row>
             </SkewedSection>
         </>

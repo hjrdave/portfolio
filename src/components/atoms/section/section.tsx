@@ -1,4 +1,5 @@
 import React from 'react';
+import Row from 'react-bootstrap/Row';
 import { compContainer, dark } from './section.module.scss';
 
 interface Props {
@@ -11,9 +12,9 @@ export default function Section({ children, dark: darkBK, className, style }: Pr
 
     return (
         <>
-            <div className={`${compContainer} ${(darkBK) ? dark : ''} ${className}`} style={style}>
+            <Row className={`${compContainer} ${(darkBK) ? dark : ''} ${className}`} style={style}>
                 {children}
-            </div>
+            </Row>
         </>
     )
 }

@@ -4,12 +4,13 @@ import { container, bubble1, bubble2, float, depth } from './animatedLandingLogo
 
 interface Props {
     className?: string;
+    noIntro?: boolean;
 }
-export default function AnimatedLandingLogo({ className }: Props) {
+export default function AnimatedLandingLogo({ className, noIntro }: Props) {
 
     return (
         <>
-            <div className={container}>
+            <div className={(noIntro) ? 'd-flex justify-content-center' : container} >
                 <div className={float}>
                     <Logo
                         className={`${className}`}

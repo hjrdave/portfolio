@@ -1,0 +1,13 @@
+//@use '../../../styles/variables.scss' as *;
+
+.compContainer{
+   // background-color: $page-background;
+    :global(.modal-header){
+        :global(.close){
+            &:focus{
+                    outline: 0px 0!important;
+                }
+        }
+    }
+}
+

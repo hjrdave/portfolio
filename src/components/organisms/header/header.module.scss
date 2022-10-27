@@ -1,0 +1,18 @@
+@use '../../../styles//variables.scss' as *;
+.compContainer{
+   position: fixed;
+    width: 100%;
+}
+
+.socialContainer{
+    height: 100%;
+    a{
+        color: black;
+        &:hover{
+            color: black;
+        }
+    }
+    i{
+        font-size: $font-size-base + 1rem;
+    }
+}

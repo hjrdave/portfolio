@@ -1,0 +1,9 @@
+@use '../../../styles/variables.scss' as *;
+
+.socialContainer{
+    z-index: 2;
+    font-size: $font-size-base + 6rem;
+    i{
+        color: $primary;
+    }
+}

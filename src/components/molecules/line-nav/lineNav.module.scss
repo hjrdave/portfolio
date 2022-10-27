@@ -1,0 +1,72 @@
+@use '../../../styles/variables.scss' as *;
+
+.lineNav{
+  position: absolute;
+  margin-top: 20vh;
+  //left: -15vw; 
+  left: 2vw;
+  stroke-linecap: round;  
+  border: 1px solid ;
+}
+
+ .listGroupFlush{
+    ul{//scroll spy wrapper
+      padding: 0px;
+    }
+  }
+
+  .lineNavActive{
+    .lineNavDot{
+      transform: scale(1.5);
+      box-shadow: $shadow-4;
+      background-color: black!important;
+    }
+    small{
+      font-weight: bold!important;
+      color: black!important;
+    }
+  }
+
+  .listGroupItem{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    margin-top: 1.2rem;
+    cursor: pointer;
+      &:first-child{
+        .lineNavDot{
+          &:after{
+            content: none;
+          }
+        }
+      }
+      &:last-child{
+        .lineNavDot{
+          &:before{
+            content: none;
+          }
+        }
+      }
+  }
+
+  .lineNavDot{
+    height: 20px;
+    width: 20px;
+    background-color: lighten(black, 15%);
+    position: absolute;
+    margin-left: -33px;
+    margin-top: 3px;
+    transition: transform .2s, box-shadow .2s, background-color .2s, color .2s;
+    
+    &:before{
+      content: ".";
+      position: absolute;
+      margin-top: 13px;
+      margin-left: 8px;
+    }
+    &:after{
+      content: ".";
+      position: absolute;
+      margin-top: -26px;
+      margin-left: 8px;
+    }
+  }

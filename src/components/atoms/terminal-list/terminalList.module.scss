@@ -1,0 +1,18 @@
+@use '../../../styles/variables.scss' as *;
+
+.compContainer{
+    font-size: 1.2rem;
+    height: 550px;
+    overflow-x: auto;
+    &:focus{
+        outline: none!important;
+        outline-width: none!important;
+    }
+    a{
+        color: rgba(var(--bs-info-rgb));
+    }
+}
+
+.active{
+    background-color: $primary;
+}

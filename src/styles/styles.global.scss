@@ -1,0 +1,14 @@
+/* 
+  Styles SCSS
+  External CSS should in imported into here.
+*/
+
+//Bootstrap 4 (node-module)
+@import '~bootstrap/dist/css/bootstrap.css';
+
+//fonts
+@import './fonts.scss';
+
+body{
+  //background-color: black;
+}

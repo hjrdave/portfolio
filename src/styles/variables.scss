@@ -1,0 +1,41 @@
+/*
+    Library Varibles
+*/
+
+//Theme colors
+$primary:       #4A3C52;
+$primary-light: lighten($primary, 5%);
+$primary-dark:  darken($primary, 5%);
+$secondary:     #7C80A6;
+$green:         #57c09c;
+$grey:          #EDEEEE;
+$light:         lighten($grey, 10%);
+$light-2:       lighten($grey, 20%);
+$font-dark:     $primary;
+$font-light:    $font-dark;
+
+//Fonts and Text
+$font-weight-light:  200;
+$font-weight-bold:   500;
+$font-size-base:     1rem;
+
+$h1-font-size:  $font-size-base * 3;
+$h2-font-size:  $font-size-base * 2;
+$h3-font-size:  $font-size-base * 1.70;
+$h4-font-size:  $font-size-base * 1.35;
+$h5-font-size:  $font-size-base * 1.25;
+$h6-font-size:  $font-size-base;
+
+$font: 'Space Mono', monospace;
+// $font-light: 'SpaceText-light', sans-serif;
+// $font-medium: 'SpaceText-medium', sans-serif;
+// $font-bold: 'SpaceText-bold', sans-serif;
+$font-family-base: $font;
+$font-glow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $green, 0 0 30px $green, 0 0 40px $green, 0 0 0px $green, inset 0 0 0px $green;
+
+//material design box shadows
+$shadow-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$shadow-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$shadow-4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+$shadow-5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);

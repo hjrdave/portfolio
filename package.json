@@ -54,7 +54,7 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "deploy:github": "npm run build && node ./scripts/deploy-github",
+    "deploy:github": "npm run build --prefix-paths && node ./scripts/deploy-github",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "convertSVG": "npx @svgr/cli -d src/assets --ignore-existing src/assets"

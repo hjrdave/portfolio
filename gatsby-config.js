@@ -3,7 +3,7 @@ module.exports = {
     title: `David Sanders Portfolio`,
     description: `My name is David Sanders and this is my Portfolio`,
     author: `@gatsbyjs`,
-    siteUrl: `https://portfolio.mediafish.io/`,
+    siteUrl: `https://hjrdave.github.io/portfolio/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

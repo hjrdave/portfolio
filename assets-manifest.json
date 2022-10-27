@@ -1,0 +1,11 @@
+{
+  "main.js": "render-page.js",
+  "render-page.js.map": "render-page.js.map",
+  "static/EventTicket.png": "static/EventTicket-117fd33b7c6c7b16f1371dfdc2fbc706.png",
+  "static/generalBrochure1.png": "static/generalBrochure1-20df653201ec6cd267bf98a7171596ba.png",
+  "static/infocards1.png": "static/infocards1-0bf08d35d53d2c28bfe7bc59c9efcba1.png",
+  "static/prymziabookcover.png": "static/prymziabookcover-44c7ec6509487a1c4c93835ffc984825.png",
+  "static/prymziamapv1.png": "static/prymziamapv1-6e6208dbe803cf958e1fdeaf38618e58.png",
+  "static/rollupbanner.png": "static/rollupbanner-8f9eec07d93c5a1a076f590d23f07a54.png",
+  "static/somethingstitched.png": "static/somethingstitched-e3238533637dbcb1310e9816f3f4d16e.png"
+}

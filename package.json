@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "private": true,
   "description": "My portfolio website.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "David A. Sanders <dsanders@mediafish.io>",
   "dependencies": {
     "@types/react-scrollspy": "^3.3.4",
